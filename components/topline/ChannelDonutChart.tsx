@@ -31,7 +31,7 @@ export default function ChannelDonutChart() {
             ))}
           </Pie>
           <Tooltip
-            formatter={(value: number) => [`${value}%`, '']}
+            formatter={(value) => [`${value}%`, '']}
             contentStyle={{
               borderRadius: 8,
               border: '1px solid #E8E8E6',

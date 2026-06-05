@@ -41,7 +41,7 @@ export default function RevenueLineChart() {
             width={42}
           />
           <Tooltip
-            formatter={(value: number, name: string) => [
+            formatter={(value, name) => [
               `${value} MNOK`,
               name === 'revenue2025' ? '2025' : '2024',
             ]}

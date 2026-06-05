@@ -43,7 +43,7 @@ export default function BudgetBarChart() {
             width={42}
           />
           <Tooltip
-            formatter={(value: number, name: string) => [
+            formatter={(value, name) => [
               `${value} MNOK`,
               name === 'revenue2025' ? 'Faktisk' : 'Budsjett',
             ]}

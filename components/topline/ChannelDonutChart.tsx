@@ -41,9 +41,10 @@ export default function ChannelDonutChart() {
           />
           <Legend
             wrapperStyle={{ fontSize: 12 }}
-            formatter={(value, entry: { payload?: { value: number } }) =>
-              `${value} — ${entry.payload?.value}%`
-            }
+            formatter={(value) => {
+              const item = toplineData.channelSplit.find((d) => d.name === value)
+              return `${value} — ${item?.value ?? ''}%`
+            }}
           />
         </PieChart>
       </ResponsiveContainer>
